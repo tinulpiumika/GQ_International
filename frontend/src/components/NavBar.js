@@ -1,8 +1,12 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
-import GQ from '../images/GQ.png'
-import { Button } from './Button';
+import GQ from '../images/footer-logo.png'
+//import { Button } from './Button';
 import './NavBar.css';
+import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+
 
 function NavBar() {
     const [click, setClick] = useState(false);
@@ -39,9 +43,11 @@ function NavBar() {
                 <div className="navbar-container">
 
                         <Link to= '/' className='navbar-log'>
-                            <img src={GQ} height='100px' width='150px;' alt="Isuru"/>
-                            GQ INTERNATIONAL 
+                            <img src={GQ} height='90px' width='80px;' alt="GQ logo" className="gq-logo"/>
+                            
                          </Link>
+
+                         <h3 className='gq-title'>GQ INTERNATIONAL</h3>
 
                         <div className= 'menu-icon' onClick = {handleclick}>
 
@@ -52,19 +58,27 @@ function NavBar() {
                         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                             <li className = 'nav-item'>
                                 <Link to='/' className = 'nav-links' onclick = {closeMobileMenu}>
-                                    Home
+                                    HOME
                                 </Link>
                             </li>
 
                             <li className = 'nav-item'>
                                 <Link to='/' className = 'nav-links' onclick = {closeMobileMenu}>
-                                    Stock
+                                    ITEMS
                                 </Link>
                             </li>
 
                             <li className = 'nav-item'>
                                 <Link to='/' className = 'nav-links' onclick = {closeMobileMenu}>
-                                    Something
+                                    CONTACT US
+                                </Link>
+                                
+                            </li>
+
+
+                            <li className = 'nav-item'>
+                                <Link to='/' className = 'nav-links' onclick = {closeMobileMenu}>
+                                    ABOUT US
                                 </Link>
                                 
                             </li>
@@ -78,12 +92,17 @@ function NavBar() {
                         </ul>
 
 
-                        {button && <Button buttonStyle= 'btn--outline' > SIGN UP </Button>}
+                       <Button variant="outline-danger" style={{marginBottom : '10px', borderRadius: "15px" }}  > LOGIN </Button>
+
+                       
 
 
                    
                 </div>
             </nav>
+
+ 
+            
         </>
     )
 }

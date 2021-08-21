@@ -1,0 +1,61 @@
+.Footer1{
+    background-color: #242424;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.gq-logo-footer{
+    margin-left: -600px;
+    position: relative;
+}
+
+.gq-footer-title{
+    margin-left: -400px;
+}
+
+.GQcontact{
+    color: #fff;
+    margin-top: 5px;
+}
+
+.GQcontactE{
+    color: #fff;
+    margin-top: -22px;
+}
+
+#fb{
+    margin-right:50px;
+}
+
+
+.address{
+    margin-top: 5px;
+    margin-bottom: -30px;
+
+}
+
+.address-1{
+    color: #fff;
+    
+
+
+
+}
+
+.address-2{
+    color: #fff;
+    margin-top: -20px;
+
+}
+
+
+.address-3{
+    color: #fff;
+    margin-top: -20px;
+
+}
